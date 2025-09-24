@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CANEZ QUISPE PHOL - Ingeniería de Sistemas y Computacion</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80'); /* Fondo de Sistemas / tecnología */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #f4f4f4;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    header img.logo {
+      height: 80px;
+      width: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+      background-color: rgba(255,255,255,0.9);
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      color: #5405ad;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .week-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+
+    .week {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+
+    .week:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      background-color: rgba(20, 20, 20, 0.85);
+    }
+
+    .week img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .week:hover img {
+      transform: scale(1.1);
+    }
+
+    .week-content {
+      padding: 15px;
+    }
+
+    .week h2 {
+      font-size: 1.4em;
+      color: #250b9b;
+      margin-bottom: 10px;
+    }
+
+    .tasks {
+      font-size: 1em;
+      color: #ddd;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Logo UPLA -->
+    <img class="logo" src="C:\Users\LENOVO\Desktop\BASE DE DATOS\Logo_upla_vertical (1).jpg" alt="Logo Universidad Peruana Los Andes">
+    <h1>Repositorio de Semanas - Ingeniería de Sistemas</h1>
+  </header>
+
+  <div class="week-container">
+    <!-- Tarjetas de semanas 1 a 16 -->
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 1">
+      <div class="week-content">
+        <h2>Semana 1</h2>
+        <div class="tasks">Tareas o notas para la semana 1.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 2">
+      <div class="week-content">
+        <h2>Semana 2</h2>
+        <div class="tasks">Tareas o notas para la semana 2.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 3">
+      <div class="week-content">
+        <h2>Semana 3</h2>
+        <div class="tasks">Tareas o notas para la semana 3.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 4">
+      <div class="week-content">
+        <h2>Semana 4</h2>
+        <div class="tasks">Tareas o notas para la semana 4.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 5">
+      <div class="week-content">
+        <h2>Semana 5</h2>
+        <div class="tasks">Tareas o notas para la semana 5.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 6">
+      <div class="week-content">
+        <h2>Semana 6</h2>
+        <div class="tasks">Tareas o notas para la semana 6.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 7">
+      <div class="week-content">
+        <h2>Semana 7</h2>
+        <div class="tasks">Tareas o notas para la semana 7.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 8">
+      <div class="week-content">
+        <h2>Semana 8</h2>
+        <div class="tasks">Tareas o notas para la semana 8.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 9">
+      <div class="week-content">
+        <h2>Semana 9</h2>
+        <div class="tasks">Tareas o notas para la semana 9.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 10">
+      <div class="week-content">
+        <h2>Semana 10</h2>
+        <div class="tasks">Tareas o notas para la semana 10.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 11">
+      <div class="week-content">
+        <h2>Semana 11</h2>
+        <div class="tasks">Tareas o notas para la semana 11.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 12">
+      <div class="week-content">
+        <h2>Semana 12</h2>
+        <div class="tasks">Tareas o notas para la semana 12.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 13">
+      <div class="week-content">
+        <h2>Semana 13</h2>
+        <div class="tasks">Tareas o notas para la semana 13.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 14">
+      <div class="week-content">
+        <h2>Semana 14</h2>
+        <div class="tasks">Tareas o notas para la semana 14.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 15">
+      <div class="week-content">
+        <h2>Semana 15</h2>
+        <div class="tasks">Tareas o notas para la semana 15.</div>
+      </div>
+    </div>
+
+    <div class="week">
+      <img src="C:\Users\LENOVO\Desktop\BASE DE DATOS\plantilla-fondo-sistema-operativo-tecnologia-digital-abstracta_115579-1234.jpg" alt="Semana 16">
+      <div class="week-content">
+        <h2>Semana 16</h2>
+        <div class="tasks">Tareas o notas para la semana 16.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Universidad Peruana Los Andes - Facultad de Ingeniería de Sistemas
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MIS EXPERIENCIAS</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mis Cursos de la Universidad</h1>
+        <p class="nombre">Creado por: <strong>CANEZ QUISPE PHOL</strong></p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bienvenido</h2>
+            <p>Este es un sitio web personal donde guardo mis apuntes, tareas y proyectos de la universidad.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - CANEZ QUISPE PHOL</p>
+    </footer>
+</body>
+</html>
+
